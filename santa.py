@@ -16,7 +16,7 @@ def valid(a, b):
 
         paar = [a[x], b[x]]
         if paar in ei_tohi or paar.reverse() in ei_tohi:
-            print paar, 'on keelatud'
+            print(paar, 'on keelatud')
             return False
 
     return True
@@ -28,7 +28,7 @@ while not valid(kellelt, kellele):
     random.shuffle(kellelt)
     random.shuffle(kellele)
 
-print '----'
+print('----')
 for x in range(len(kellelt)):
-    print kellelt[x], '->', kellele[x]
+    print(kellelt[x], '->', kellele[x])
 
